@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        para.relative {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid green;
+        }
+
+        para.absolute {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            height: 100px;
+            border: 3px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Using position: absolute;</h2>
+
+    <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor:</p>
+
+    <para class="relative">This para element has position: relative;
+        <para class="absolute">This para element has position: absolute;</para>
+    </para>
+
+</body>
+
+</html>
